@@ -8,6 +8,18 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <!-- <h6>Remove this &lt;h3&gt; and create your HTML here</h6> -->
+    <div class="row assignment1Row">
+      <div class="col-2">
+        <label for="Enter Name">Enter Name: </label>
+      </div>
+      <div class="col-5">
+        <input type="text" class="form-control" #inputElem (input)="onInputEvent(inputElem.value)">
+      </div>
+      <div class="col-5">
+        <div class="alert-danger-clr">{{ name }}</div>
+      </div>
+    </div>
+    
   </div>
 </div>

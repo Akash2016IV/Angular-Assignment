@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment1.component.css']
 })
 export class Assignment1Component {
+  
+  name: string;
 
+  onInputEvent(name: string){
+    this.name = name;
+  }
 }
